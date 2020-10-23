@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta Mig</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container1">
+        <a href="https://www.facebook.com/profile.php?id=100013035513532" target="_blank"><button class=buttonYoutube><b>Facebook</b></button></a>
+        <a href="index.html"><button class=buttonYoutube><b>Presentation</b></button></a>
+        <a href="portfolio.html"><button class=buttonYoutube><b>Portfolio</b></button></a> <!--Här gjorde jag en kontakt sida för email, den är inte riktigt klar och funkar inte riktigt än men är nöjd med hur den ser ut-->
+        </div>
+    <div class="contact-title">
+        <h1>Säg Hej</h1>
+        <h2>Fråga mig vad du vill!</h2>
+    </div>
+    <div class="contact-form">
+        <form id="contact-form" method="post" action="contact-form-handler.php">
+            <input name="name" type="text" class="form-control" placeholder="Ditt namn" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Din Email" required><br>
+
+                <textarea name="message" class="form-control" placeholder="Meddelande" row="4" required></textarea><br>
+
+                <input type="submit" class="form-control submit" value="SKICKA MEDDELANDE">
+        </form>
+    </div>
+</body>
+</html>

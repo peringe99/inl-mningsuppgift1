@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Presentation</title>
+</head>
+<body>
+  <!--Här satt jag en div class till knapparna så att dem var lättare att ändra i CSS-->
+  <div class="container1">
+    <a href="https://www.facebook.com/profile.php?id=100013035513532" target="_blank"><button class=buttonYoutube><b>Facebook</b></button></a>
+    <a href="portfolio.html"><button class=buttonYoutube><b>Portfolio</b></button></a>
+    <a href="contactUs.html"><button class=buttonYoutube><b>Kontakt</b></button></a> <!--Här gjorde jag en kontakt sida för email, den är inte riktigt klar och funkar inte riktigt än men är nöjd med hur den ser ut-->
+    </div>
+  <h1 class="titel">Min presentation</h1> <!--På "titel" fick jag sänka font storlek efter 375px bredd för att den skulle få plats-->
+    <p><i>Av <b>Gabriel Holmkvist</b></i></p>
+    <p>Jag är 21 år, bor i Ekeby med min familj och mina katter. Är väldigt ny inom programmering men har alltid fascinerats av det. </br>
+      Jag ser fram emot att fortsätta med denna kursen och fördjupa mig inom frontend. </br>
+    Nedanför har jag bilder på mig, vårt bibliotek i Ekeby och mina två katter; Armani & Gucci. </p>
+    <!--på bilderna nedanför kodade jag media screen så att bilderna skulle visas vertikalt när bredden på skärmen blev 670px eller mindre-->
+    <!--Jag fixade även fonten och storlek på knapparna på knapparna när bredden var 500px eller mindre och använde mig av flex wrap så att knapparna passade bättre på skärmen och inget var utanför-->
+      <div class="bilder"> <!--Här har jag justerat bredd och höjd på bilderna så att det skulle matcha bra och inte se konstigt ut-->
+    <img class=imgMig src="mig.jpg" alt="En bild av mig" width="150px" height="200px">
+    <img class=imgEkeby src="ekeby.webp" alt="Bild av Ekebys Bibliotek" width="320px" height="200px">
+    <img class=imgKatter src="katter.jpg" alt="Bild av mina katter" height="200px" width="150px">
+  </div>
+    <p>Klicka på knappen nedanför för att komma till en av mina favoritsidor</p> <!--Denna knappen likt knapparna längs uppe har jag tagit hjälp ifrån youtube där dem visade hur man kunde fixa hover-effekter i CSS-->
+    <div class="container">
+    <a href="https://www.youtube.com/" target="_blank"><button class=buttonYoutube><b>Youtube</b></button></a> <!--Här valde jag att använda _blank för att användaren ska få upp youtube fliken i en annan flik-->
+    
+    </div>
+    <br/>
+ <!--här fick jag använda mig av cover, norepeat och fixed för att låta bilden täcka hela sidan oavsett storlek på enhet-->
+  <style>  
+    body{ 
+        background-image: url(SplitShire-8098-1800x1200.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    } 
+  </style>
+</body>
+
+</html>

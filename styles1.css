@@ -1,0 +1,105 @@
+.titel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 16px;
+    padding: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.buttonYoutube{
+    margin: 0;
+    padding: 0; 
+}
+.container{
+    text-align: center;
+}
+.buttonYoutube{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+    color: #ffff;
+    position: relative;
+    overflow: hidden;
+}
+.buttonYoutube:hover{
+    color: #3498db;
+
+}
+.buttonYoutube::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.5s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+}
+
+.imgMig{
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.imgEkeby{
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.imgKatter{
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.bilder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 670px){
+    .bilder{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .container1{
+        font-size: 10px;
+        padding: 2px;
+        margin: 2px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .titel{
+        font-size: 30px
+    }
+}
